@@ -79,6 +79,12 @@ public class AlumnoDto {
 	}
 	
 	
+	
+	
+	
+	
+	
+	
 	public static List<AlumnoDto> getInstance(List<Alumno> alumnos) {
 		List<AlumnoDto> alumnosDto = new ArrayList<AlumnoDto>();
 		for( Alumno al: alumnos) {
