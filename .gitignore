@@ -1,1 +1,4 @@
 /.metadata/
+
+# Dependency directories
+node_modules/
