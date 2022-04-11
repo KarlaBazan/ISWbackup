@@ -66,7 +66,7 @@ public class DatosMedicosController {
 		datosMedicos.setProblema_fisico(datosDto.getProblema_fisico());
 		datosMedicos.setTiposangre(datosDto.getTiposangre());
 		
-		DatosMedicos datosSaved = datosService.actualizarDatosMedicos(datosMedicos); 
+		DatosMedicos datosSaved = datosService.agregarDatosMedicos(datosMedicos); 
 		
 		if(datosSaved == null) {
 			return new ResponseEntity<DatosMedicosDto>(HttpStatus.NOT_FOUND);
