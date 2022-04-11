@@ -18,11 +18,11 @@ import com.example.ISWProyecto.serviceImpl.AlumnoServiceImpl;
 public class AlumnoController {
 	
 	@Autowired 
-	private AlumnoServiceImpl alumnoServiceImpl;
+	private AlumnoServiceImpl alumnoService;
 	
 	@RequestMapping(value="/findAlumno/{boleta}/{password}", method= RequestMethod.GET)
 	public ResponseEntity<AlumnoDto> findAlumno(@PathVariable("boleta") String boleta, @PathVariable("password") String password){
-		Alumno alumno = alumnoServiceImpl.findAlumno(boleta, password);
+		Alumno alumno = alumnoService.findAlumno(boleta, password);
 		if(alumno == null) {
 			return new ResponseEntity<AlumnoDto>(AlumnoDto.getInstance(alumno), HttpStatus.NO_CONTENT);
 		}
@@ -36,7 +36,7 @@ public class AlumnoController {
 	
 	@RequestMapping(value="/findAll", method=RequestMethod.GET)
 	public ResponseEntity<List<AlumnoDto>> findAll(){
-		List<Alumno> alumnos = alumnoServiceImpl.findAll();
+		List<Alumno> alumnos = alumnoService.findAll();
 		if(alumnos.isEmpty()) {
 			return new ResponseEntity<List<AlumnoDto>>(HttpStatus.NOT_FOUND);
 		}

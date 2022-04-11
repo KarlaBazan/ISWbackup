@@ -6,10 +6,12 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="alumnos")
+@Table(name="ALUMNOS")
+@NamedQuery(name="Alumno.findAll", query="SELECT a FROM Alumno a")
 public class Alumno {
 
 	@Id
