@@ -24,7 +24,7 @@ public class AlumnoController {
 	public ResponseEntity<AlumnoDto> findAlumno(@PathVariable("boleta") String boleta, @PathVariable("password") String password){
 		Alumno alumno = alumnoService.findAlumno(boleta, password);
 		if(alumno == null) {
-			return new ResponseEntity<AlumnoDto>(AlumnoDto.getInstance(alumno), HttpStatus.NO_CONTENT);
+			return new ResponseEntity<AlumnoDto>(AlumnoDto.getInstance(alumno), HttpStatus.NO_CONTENT); 
 		}
 		
 		AlumnoDto alumnoDto = AlumnoDto.getInstance(alumno);
