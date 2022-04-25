@@ -1,4 +1,15 @@
-#footer{
-    margin-top:0%;
-    
+footer {
+    background-color: white;
+    padding: 10px 16px !important;
+    position: relative;
+    bottom: 0;
 }
+
+.link-primary{
+    padding-right: 20px;
+}
+
+.link-social{
+    padding: 0 10px;
+}
+

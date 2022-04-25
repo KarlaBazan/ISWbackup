@@ -1,0 +1,26 @@
+.navbar{
+    margin: 0px 0px !important;
+}
+
+.nav-item{
+    padding: 0 12px;
+}
+
+.nav-link{
+    color: white !important;
+    border-radius: 20px;
+    padding: 0 12px;
+    width: auto;
+}
+
+.nav-link:hover{
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.nav-link:focus{
+    font-weight: bold;
+    color: rgb(107, 23, 64) !important;
+    background-color: white;
+    padding: 0 12px;
+}
