@@ -39,8 +39,5 @@ public class Materias {
 	public void setSalon(String salon) {
 		this.salon = salon;
 	}
-	
-	
-	
 
 }
