@@ -6,6 +6,6 @@ public interface IAlumnos_has_Calificaciones {
 	
 	List<Alumnos_has_Calificaciones> findAll();
 	
-	Alumnos_has_Calificaciones finAlumnosHCById(String alumnos_boleta);
+	Alumnos_has_Calificaciones findAlumnoHCById(String alumnos_boleta);
 
 }

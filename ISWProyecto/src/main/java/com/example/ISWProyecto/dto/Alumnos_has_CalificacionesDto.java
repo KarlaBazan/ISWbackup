@@ -9,8 +9,8 @@ public class Alumnos_has_CalificacionesDto {
 	
 	@JsonProperty("alumnos_boleta")
 	private String alumnos_boleta;
-	@JsonProperty("calificaciones_materia")
-	private String calificaciones_materia;
+	@JsonProperty("calificaciones_materia_idmateria")
+	private String calificaciones_materia_idmateria;
 	
 	
 	
@@ -19,7 +19,7 @@ public class Alumnos_has_CalificacionesDto {
 		Alumnos_has_CalificacionesDto alumnos_has_califdto = new Alumnos_has_CalificacionesDto();
 		if(alumnos_has_calif!=null) {
 			alumnos_has_califdto.setAlumnos_boleta(alumnos_has_calif.getAlumnos_boleta());
-			alumnos_has_califdto.setCalificaciones_materia(alumnos_has_calif.getCalificaciones_materia());
+			alumnos_has_califdto.setCalificaciones_materia_idmateria(alumnos_has_calif.getCalificaciones_materia_idmateria());
 		}
 		return alumnos_has_califdto;
 		
@@ -38,11 +38,11 @@ public class Alumnos_has_CalificacionesDto {
 	public void setAlumnos_boleta(String alumnos_boleta) {
 		this.alumnos_boleta = alumnos_boleta;
 	}
-	public String getCalificaciones_materia() {
-		return calificaciones_materia;
+	public String getCalificaciones_materia_idmateria() {
+		return calificaciones_materia_idmateria;
 	}
-	public void setCalificaciones_materia(String calificaciones_materia) {
-		this.calificaciones_materia = calificaciones_materia;
+	public void setCalificaciones_materia_idmateria(String calificaciones_materia_idmateria) {
+		this.calificaciones_materia_idmateria = calificaciones_materia_idmateria;
 	}
 	
 	

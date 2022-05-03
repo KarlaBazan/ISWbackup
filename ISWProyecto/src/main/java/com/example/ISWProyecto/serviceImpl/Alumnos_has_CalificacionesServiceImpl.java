@@ -12,18 +12,19 @@ import com.example.ISWProyecto.service.IAlumnos_has_Calificaciones;
 public class Alumnos_has_CalificacionesServiceImpl implements IAlumnos_has_Calificaciones {
 
 	@Autowired
-	Alumnos_has_CalificacionesRepository alumnoshcService;
+	Alumnos_has_CalificacionesRepository alumnoshcRepository;
+
+
+	@Override
+	public Alumnos_has_Calificaciones findAlumnoHCById(String alumnos_boleta) {
+		
+		return alumnoshcRepository.findAlumnoHCById(alumnos_boleta);
+	}
+	
 	@Override
 	public List<Alumnos_has_Calificaciones> findAll() {
 		
-		return alumnoshcService.findAll();
+		return alumnoshcRepository.findAll();
 	}
-
-	@Override
-	public Alumnos_has_Calificaciones finAlumnosHCById(String alumnos_boleta) {
-		
-		return alumnoshcService.findAlumnoHCById(alumnos_boleta);
-	}
-	
 
 }

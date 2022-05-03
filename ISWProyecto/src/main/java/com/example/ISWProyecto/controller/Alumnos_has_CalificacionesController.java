@@ -22,12 +22,12 @@ public class Alumnos_has_CalificacionesController {
 
 	@RequestMapping(value="/findAll", method=RequestMethod.GET)
 	public ResponseEntity<List<Alumnos_has_CalificacionesDto>> findAll(){
-		List<Alumnos_has_Calificaciones> alumnos = alumnoshcService.findAll();
-		if(alumnos.isEmpty()) {
+		List<Alumnos_has_Calificaciones> alumnoshc = alumnoshcService.findAll();
+		if(alumnoshc.isEmpty()) {
 			return new ResponseEntity<List<Alumnos_has_CalificacionesDto>>(HttpStatus.NOT_FOUND);
 		}
 		
-		List<Alumnos_has_CalificacionesDto> alumnos_has_califdto = Alumnos_has_CalificacionesDto.getInstance(alumnos);
+		List<Alumnos_has_CalificacionesDto> alumnos_has_califdto = Alumnos_has_CalificacionesDto.getInstance(alumnoshc);
 		return new ResponseEntity<List<Alumnos_has_CalificacionesDto>>(alumnos_has_califdto, HttpStatus.OK);
 		
 	}

@@ -9,8 +9,8 @@ import com.example.ISWProyecto.model.Materias;
 
 public interface MateriasRepository extends JpaRepository<Materias, String> {
 	
-	@Query("SELECT a FROM Materias a where a.id = :id")
-	Materias findMateriaById(@Param("id") String id);
+	@Query("SELECT a FROM Materias a where a.idmateria = :idmateria")
+	Materias findMateriaById(@Param("idmateria") String idmateria);
 	
 	
 }
