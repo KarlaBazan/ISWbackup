@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="U_GESTION_ESC")
 @NamedQuery(name="U_Gestion_Esc.findAll", query="SELECT a FROM U_Gestion_Esc a")
-public class U_Gest_Esc {
+public class U_Gestion_Esc {
 
 	@Id
 	private String rfc; 

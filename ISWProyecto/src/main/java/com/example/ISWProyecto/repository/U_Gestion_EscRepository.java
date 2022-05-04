@@ -5,9 +5,9 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 
-import com.example.ISWProyecto.model.U_Gest_Esc;
+import com.example.ISWProyecto.model.U_Gestion_Esc;
 
-public interface U_Gest_EscRepository extends JpaRepository<U_Gest_Esc, String>{
+public interface U_Gestion_EscRepository extends JpaRepository<U_Gestion_Esc, String>{
 	@Query("SELECT a FROM U_Gestion_Esc a where a.rfc = :rfc and a.contrasena = :contrasena")
-	U_Gest_Esc findU_Gest_Esc(@Param("rfc") String rfc, @Param("contrasena") String contrasena);
+	U_Gestion_Esc findU_Gestion_Esc(@Param("rfc") String rfc, @Param("contrasena") String contrasena);
 }

@@ -10,7 +10,7 @@ import javax.persistence.Lob;
 
 import com.example.ISWProyecto.model.Alumno;
 import com.example.ISWProyecto.model.Maestros;
-import com.example.ISWProyecto.model.U_Gest_Esc;
+import com.example.ISWProyecto.model.U_Gestion_Esc;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MaestrosDto {

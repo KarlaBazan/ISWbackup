@@ -8,10 +8,10 @@ import javax.persistence.Column;
 import javax.persistence.FetchType;
 import javax.persistence.Lob;
 
-import com.example.ISWProyecto.model.U_Gest_Esc;
+import com.example.ISWProyecto.model.U_Gestion_Esc;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class U_Gest_EscDto {
+public class U_Gestion_EscDto {
 	
 	@JsonProperty("rfc")
 	private String rfc; 
@@ -32,27 +32,27 @@ public class U_Gest_EscDto {
 	
 	
 	
-	public static U_Gest_EscDto getInstance(U_Gest_Esc u_gest_esc) {
-		U_Gest_EscDto u_gest_escdto = new U_Gest_EscDto();
-		if(u_gest_esc!=null) {
-			u_gest_escdto.setRfc(u_gest_esc.getRfc());
-			u_gest_escdto.setNombre(u_gest_esc.getNombre());
-			u_gest_escdto.setPaterno(u_gest_esc.getPaterno());
-			u_gest_escdto.setMaterno(u_gest_esc.getMaterno());
-			u_gest_escdto.setCurp(u_gest_esc.getCurp());
-			u_gest_escdto.setFoto(u_gest_esc.getFoto());
-			u_gest_escdto.setNacionalidad(u_gest_esc.getNacionalidad());
-			u_gest_escdto.setContrasena(u_gest_esc.getContrasena());
+	public static U_Gestion_EscDto getInstance(U_Gestion_Esc u_gestion_esc) {
+		U_Gestion_EscDto u_gestion_escdto = new U_Gestion_EscDto();
+		if(u_gestion_esc!=null) {
+			u_gestion_escdto.setRfc(u_gestion_esc.getRfc());
+			u_gestion_escdto.setNombre(u_gestion_esc.getNombre());
+			u_gestion_escdto.setPaterno(u_gestion_esc.getPaterno());
+			u_gestion_escdto.setMaterno(u_gestion_esc.getMaterno());
+			u_gestion_escdto.setCurp(u_gestion_esc.getCurp());
+			u_gestion_escdto.setFoto(u_gestion_esc.getFoto());
+			u_gestion_escdto.setNacionalidad(u_gestion_esc.getNacionalidad());
+			u_gestion_escdto.setContrasena(u_gestion_esc.getContrasena());
 		}
-		return u_gest_escdto;
+		return u_gestion_escdto;
 		
 	}
-	public static List<U_Gest_EscDto> getInstance(List<U_Gest_Esc> u_gest_esc) {
-		List<U_Gest_EscDto> u_gest_escDto = new ArrayList<U_Gest_EscDto>();
-		for( U_Gest_Esc uge: u_gest_esc) {
-			u_gest_escDto.add(U_Gest_EscDto.getInstance(uge));
+	public static List<U_Gestion_EscDto> getInstance(List<U_Gestion_Esc> u_gestion_esc) {
+		List<U_Gestion_EscDto> u_gestion_escdto = new ArrayList<U_Gestion_EscDto>();
+		for( U_Gestion_Esc uge: u_gestion_esc) {
+			u_gestion_escdto.add(U_Gestion_EscDto.getInstance(uge));
 		}
-		return u_gest_escDto;
+		return u_gestion_escdto;
 		
 	}
 	
