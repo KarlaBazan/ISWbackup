@@ -7,12 +7,13 @@
       <div class="card-body">
         <h3  class="card-title">Iniciar sesi&oacute;n</h3>
         <br>
+        <form [formGroup]="formlogin" (submit)="send()" errorTailor>
+        <div class="mb-3 d-flex flex-column">
+          <input type="text" class="form-control" formControlName="boleta" placeholder="Boleta" minlength="10" maxlength="10" size="10">
 
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Boleta" maxlength="10" size="10">
         </div>
-        <div class="mb-3">
-          <input type="password" minlength="8" maxlength="16" size="16" class="form-control" placeholder="Contraseña">
+        <div class="mb-3 d-flex flex-column">
+          <input type="password" minlength="4" maxlength="16" size="16" class="form-control" formControlName="password" placeholder="Contraseña" [controlErrorsTpl]="passwordError">
         </div>
 
         <div class="mb-3">
@@ -20,8 +21,12 @@
         </div>
 
         <div class="mb-3">
-          <button class="btn btn-primary">Login</button>
+          <button class="btn btn-primary" [disabled]="formlogin.invalid">Login</button>
         </div>
+      </form>
+      <div>
+        
+      </div>
       </div>
   </div>
 
@@ -46,5 +51,10 @@
     </div>
   </div>
 </div>
+
+<ng-template let-error let-text="text" #passwordError >
+ {{text}}
+
+</ng-template>
 
 <app-footer></app-footer>
