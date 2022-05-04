@@ -13,6 +13,7 @@ import { FormgeneralesComponent } from './formgenerales/formgenerales.component'
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorTailorModule } from '@ngneat/error-tailor';
+import { ReccontraComponent } from './reccontra/reccontra.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ErrorTailorModule } from '@ngneat/error-tailor';
     NavbarComponent,
     HomepageComponent, 
     FormdireccionComponent, 
-    FormgeneralesComponent
+    FormgeneralesComponent,
+    ReccontraComponent
   ],
   imports: [
     BrowserModule,

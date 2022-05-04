@@ -4,11 +4,13 @@ import { LoginComponent } from './login/login.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FormdireccionComponent } from './formdireccion/formdireccion.component';
 import { FormgeneralesComponent } from './formgenerales/formgenerales.component';
+import { ReccontraComponent } from './reccontra/reccontra.component';
 const routes: Routes = [
       {path:'login', component: LoginComponent},
       {path:'home', component: HomepageComponent},
       {path:'direccion', component: FormdireccionComponent},
-      {path:'generales', component: FormgeneralesComponent}
+      {path:'generales', component: FormgeneralesComponent}, 
+      {path:'recuperar', component: ReccontraComponent}
 ];
 
 @NgModule({
