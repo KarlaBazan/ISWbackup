@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +9,11 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavdataComponent } from './navdata/navdata.component';
+import { FormdireccionComponent } from './formdireccion/formdireccion.component';
+import { FormgeneralesComponent } from './formgenerales/formgenerales.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ErrorTailorModule } from '@ngneat/error-tailor';
 
 @NgModule({
   declarations: [
@@ -17,13 +22,28 @@ import { NavdataComponent } from './navdata/navdata.component';
     FooterComponent,
     LoginComponent,
     NavbarComponent,
-    HomepageComponent,
     NavdataComponent
+    HomepageComponent, 
+    FormdireccionComponent, 
+    FormgeneralesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    ReactiveFormsModule, 
+    ErrorTailorModule.forRoot({
+      errors:{
+        useValue: {
+          required:'Campo requerido',
+          minlength:({requiredLength, actualLength})=> 
+          'Se necesitan 10 caracteres',
+          invalidAddress: error =>'Direccion invalida'
+        }
+      }
+    })
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
