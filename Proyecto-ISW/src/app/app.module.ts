@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { NavdataComponent } from './navdata/navdata.component';
 import { FormdireccionComponent } from './formdireccion/formdireccion.component';
 import { FormgeneralesComponent } from './formgenerales/formgenerales.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,6 +23,7 @@ import { ReccontraComponent } from './reccontra/reccontra.component';
     FooterComponent,
     LoginComponent,
     NavbarComponent,
+    NavdataComponent
     HomepageComponent, 
     FormdireccionComponent, 
     FormgeneralesComponent,
