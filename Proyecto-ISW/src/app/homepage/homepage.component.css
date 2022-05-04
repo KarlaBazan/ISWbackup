@@ -4,18 +4,9 @@
     width: 96%;
     max-width: 96%;
     margin: 30px 2%;
-    height: 100%;
+    height: 110%;
     display: flex;
     gap: 30px;
-}
-
-.barra-lateral{
-    width: 25%;
-    height: 100%;
-    background-color: white;
-    text-align: center;
-    border: 6px solid rgb(107, 23, 64);
-    border-radius: 10px;
 }
 
 .main{
