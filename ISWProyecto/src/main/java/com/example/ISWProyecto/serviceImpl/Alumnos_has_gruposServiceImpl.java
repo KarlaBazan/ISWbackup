@@ -15,16 +15,16 @@ public class Alumnos_has_gruposServiceImpl implements IAlumnos_has_grupos {
 	@Autowired
 	Alumnos_has_gruposRepository alumnoshgRepository;
 	
-	@Override
-	public List<Alumnos_has_grupos> findAll() {
-		// TODO Auto-generated method stub
-		return alumnoshgRepository.findAll();
-	}
 
 	@Override
 	public Alumnos_has_grupos findAlumnoHGById(String alumnos_boleta) {
 		
 		return alumnoshgRepository.findAlumnoHGById(alumnos_boleta);
+	}
+	@Override
+	public List<Alumnos_has_grupos> findAll() {
+		// TODO Auto-generated method stub
+		return alumnoshgRepository.findAll();
 	}
 
 }

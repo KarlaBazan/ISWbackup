@@ -6,7 +6,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="ALUMNOS_HAS_CALIFICACIONES")
+@Table(name="ALUMNOS_HAS_GRUPOS")
 @NamedQuery(name="Alumnos_has_grupos.findAll", query="SELECT a FROM Alumnos_has_grupos a")
 public class Alumnos_has_grupos {
 	
