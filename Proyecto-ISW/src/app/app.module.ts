@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorTailorModule } from '@ngneat/error-tailor';
 import { ReccontraComponent } from './reccontra/reccontra.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,7 @@ import { ReccontraComponent } from './reccontra/reccontra.component';
     FooterComponent,
     LoginComponent,
     NavbarComponent,
-    NavdataComponent
+    NavdataComponent,
     HomepageComponent, 
     FormdireccionComponent, 
     FormgeneralesComponent,
@@ -40,7 +41,7 @@ import { ReccontraComponent } from './reccontra/reccontra.component';
           required:'Campo requerido',
           minlength:({requiredLength, actualLength})=> 
           'Se necesitan 10 caracteres',
-          invalidAddress: error =>'Direccion invalida'
+          email: error =>'Direccion invalida'
         }
       }
     })

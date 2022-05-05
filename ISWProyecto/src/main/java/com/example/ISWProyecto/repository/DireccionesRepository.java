@@ -10,6 +10,6 @@ import com.example.ISWProyecto.model.Direcciones;
 public interface DireccionesRepository extends JpaRepository<Direcciones, Integer>{
 	
 	@Query("SELECT a FROM Direcciones a where a.iddireccion = :iddireccion")
-	Direcciones findDireccion(@Param("iddireccion") Integer iddireccion);
+	Direcciones findDireccion(@Param("iddireccion") Long iddireccion);
 
 }
