@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorTailorModule } from '@ngneat/error-tailor';
 import { ReccontraComponent } from './reccontra/reccontra.component';
+import { HorarioComponent } from './horario/horario.component';
+import { CalificacionesComponent } from './calificaciones/calificaciones.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { ReccontraComponent } from './reccontra/reccontra.component';
     HomepageComponent, 
     FormdireccionComponent, 
     FormgeneralesComponent,
-    ReccontraComponent
+    ReccontraComponent,
+    HorarioComponent,
+    CalificacionesComponent
   ],
   imports: [
     BrowserModule,
