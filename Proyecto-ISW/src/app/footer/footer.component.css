@@ -1,4 +1,4 @@
-#footer{
-    margin-top:0%;
-    
+footer{
+    position: absolute;
+    margin-top: 1% !important;
 }

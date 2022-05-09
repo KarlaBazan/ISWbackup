@@ -17,7 +17,7 @@ public class DireccionesServiceImpl implements IDireccionesService{
 	
 
 	@Override
-	public Direcciones findDireccion(Integer iddirecciones) {
+	public Direcciones findDireccion(Long iddirecciones) {
 		return direccionesRepository.findDireccion(iddirecciones);
 	}
 

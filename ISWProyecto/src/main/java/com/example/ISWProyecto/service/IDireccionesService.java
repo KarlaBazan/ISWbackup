@@ -6,7 +6,7 @@ import com.example.ISWProyecto.model.Direcciones;
 
 public interface IDireccionesService {
 	
-	Direcciones findDireccion(Integer iddireccione);
+	Direcciones findDireccion(Long iddireccione);
 	
 	List<Direcciones> findAll();
 	

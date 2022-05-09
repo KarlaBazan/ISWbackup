@@ -40,7 +40,7 @@ public class DireccionesController {
 	
 	
 	@RequestMapping(value="/findDireccion/{iddireccion}", method= RequestMethod.GET)
-	public ResponseEntity<DireccionesDto> findDatos(@PathVariable("iddireccion") Integer iddireccion){
+	public ResponseEntity<DireccionesDto> findDatos(@PathVariable("iddireccion") Long iddireccion){
 		Direcciones direcciones = direccionesService.findDireccion(iddireccion);
 		if(direcciones == null) {
 			return new ResponseEntity<DireccionesDto>(DireccionesDto.getInstance(direcciones), HttpStatus.NO_CONTENT);
@@ -56,9 +56,7 @@ public class DireccionesController {
 		
 		Direcciones dir = new Direcciones();
 		
-		if(!Objects.isNull(dirDto.getIddireccion()) && dirDto.getIddireccion()<0) {
-			dir.setIddireccion(dirDto.getIddireccion());
-		}
+		
 		
 		dir.setAlcaldia(dirDto.getAlcaldia());
 		dir.setCalle(dirDto.getCalle());

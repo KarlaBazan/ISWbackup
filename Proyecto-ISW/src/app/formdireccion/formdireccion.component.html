@@ -1,0 +1,46 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<br>
+<div >
+    
+  <form [formGroup]="formdireccion" (submit)="update()" errorTailor>
+<section class="form-register  ">
+
+    
+    <h2>Direccion</h2>
+    <p>
+        Correo: <input class="controls" formControlName="correo" type="correo" name="correo" id="correo">
+    </p>
+    <p>
+        Calle: <input class="controls" formControlName="calle" type="text" name="calle" id="calle">
+    </p>
+    <p>
+        Num Int: <input class="controls" formControlName="numint" type="text" name="numint" id="numint">
+    </p>
+    <p>
+        Num Ext: <input class="controls" formControlName="numext" type="text" name="numext" id="numext">
+    </p>
+    <p>
+        Colonia: <input class="controls" formControlName="alcaldia" type="text" name="alcaldia" id="alcaldia">
+    </p>
+    <p>
+        Cp: <input class="controls" minlength="5" maxlength="5" size="5" formControlName="cp" type="text" name="cp" id="cp">
+    </p>
+    <p>
+        Estado: <input class="controls" formControlName="estado" type="text" name="estado" id="estado">
+    </p>
+    
+    <p>
+        Telefono: <input class="controls" formControlName="telcasa" type="text" name="telcasa" id="telcasa">
+    </p>
+    <p>
+        Movil: <input class="controls" formControlName="telmovil" type="text" name="telmovil" id="telmovil">
+    </p>
+    <div class="mb-3">
+        <button class="btn btn-primary" [disabled]="formdireccion.invalid" >Modificar Datos</button>
+    </div>
+  </section>
+</form>
+</div>
+
+<app-footer></app-footer>
