@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-md navbar-dark mb-4" style="background-color: rgb(107, 23, 64)">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="['/home']">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Mis Datos</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown dropdown-submenu">
+                <a class="dropdown-item trigger dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">General</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" [routerLink]="['/generales']">Datos Generales</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Nacimiento</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" [routerLink]="['/direccion']">Direccion</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Padre/Tutor</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">Datos Medicos</a></li>
+              <li><a class="dropdown-item" href="#">Datos Deportivos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Inscripcion Actual</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="">Horario</a></li>
+              <li><a class="dropdown-item" href="#">Calificaciones</a></li>
+              <li><a class="dropdown-item" href="#">Kardex</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Reinscripciones</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ficha de Reinscripcion</a></li>
+              <li><a class="dropdown-item" href="#">Reinscripcion</a></li>
+              <li><a class="dropdown-item" href="#">Horario de clase</a></li>
+              <li><a class="dropdown-item" href="#">Ocupabilidad de horarios</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tramites</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Solicitud de Constancia </a></li>
+              <li class="dropdown dropdown-submenu">
+                <a class="dropdown-item trigger dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Solicitud de Boleta</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Boleta Global</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Boleta Informativa</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ETS</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Inscripcion ETS</a></li>
+              <li><a class="dropdown-item" href="#">Calificaciones ETS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dictamen</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Solicitud de Dictamen</a></li>
+              <li><a class="dropdown-item" href="#">Datos del Dictamen</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Saberes Previos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Inscripcion Saberes Previos</a></li>
+              <li><a class="dropdown-item" href="#">Calificaciones Saberes Previos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+

@@ -1,0 +1,31 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<br>
+<form [formGroup]="formgenerales" (submit)="update()" errorTailor>
+<section class="form-register">
+    <h2>Datos Generales</h2>
+    <p>
+        Boleta: <input class="controls" formControlName="boleta" type="text" name="boleta" id="boleta" [readonly]="true" >
+    </p>
+    <p>
+        Nombre: <input class="controls" formControlName="nombre" type="text" name="nombre" id="nombre" [readonly]="true">
+    </p>
+    
+    <p>
+        CURP: <input class="controls" formControlName="curp" type="text" name="curp" id="curp" [readonly]="true">
+    </p>
+    <p>
+        RFC: <input class="controls" formControlName="rfc" type="text" name="rfc" id="rfc" [readonly]="true">
+    </p>
+    <p>
+        Nacionalidad: <input class="controls" formControlName="nacionalidad" type="text" name="nacionalidad" id="nacionalidad" [readonly]="true">
+    </p>
+    <p>
+        Sexo:  
+        <input type="radio" name="sexo" value="h" checked="true"> Hombre
+        <input type="radio" name="sexo" value="m"> Mujer
+    </p>
+    
+  </section>
+</form>
+  <app-footer></app-footer>

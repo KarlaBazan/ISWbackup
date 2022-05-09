@@ -7,3 +7,37 @@
   justify-content: center;
   align-items: center;
 }
+
+.container{
+  margin-top: 4%;
+}
+
+h3{
+  color:maroon;
+  text-align: center;
+}
+
+a{
+  justify-content: center;
+}
+
+.btn-primary{
+  background-color: maroon;
+  border-color: maroon;
+  
+}
+
+.mb-3{
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+input.ng-invalid.ng-touched{
+    border: solid 2px tomato;
+}
+
+input.ng-valid.ng-touched{
+  border: solid 2px green;
+}
