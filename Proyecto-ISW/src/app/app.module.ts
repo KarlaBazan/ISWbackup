@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorTailorModule } from '@ngneat/error-tailor';
 import { ReccontraComponent } from './reccontra/reccontra.component';
+import { KardexComponent } from './kardex/kardex.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +24,12 @@ import { ReccontraComponent } from './reccontra/reccontra.component';
     FooterComponent,
     LoginComponent,
     NavbarComponent,
-    NavdataComponent
+    NavdataComponent,
     HomepageComponent, 
     FormdireccionComponent, 
     FormgeneralesComponent,
-    ReccontraComponent
+    ReccontraComponent,
+    KardexComponent
   ],
   imports: [
     BrowserModule,
