@@ -15,10 +15,6 @@ public class Grupos {
 	
 	private String turno; 
 	
-	private String salon; 
-	
-	private String semestre;
-
 	public String getGrupo() {
 		return grupo;
 	}
@@ -35,21 +31,6 @@ public class Grupos {
 		this.turno = turno;
 	}
 
-	public String getSalon() {
-		return salon;
-	}
-
-	public void setSalon(String salon) {
-		this.salon = salon;
-	}
-
-	public String getSemestre() {
-		return semestre;
-	}
-
-	public void setSemestre(String semestre) {
-		this.semestre = semestre;
-	} 
 	
 	
 }

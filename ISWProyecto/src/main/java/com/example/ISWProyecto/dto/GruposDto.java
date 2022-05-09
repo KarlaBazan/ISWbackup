@@ -13,19 +13,13 @@ public class GruposDto {
 	private String grupo; 
 	@JsonProperty("turno")
 	private String turno; 
-	@JsonProperty("salon")
-	private String salon; 
-	@JsonProperty("semestre")
-	private String semestre;
-	
+
 	
 	
 	public static GruposDto getInstance(Grupos grupo) {
 		GruposDto gruposdto = new GruposDto();
 		if(grupo!=null) {
 			gruposdto.setGrupo(grupo.getGrupo());
-			gruposdto.setSalon(grupo.getSalon());
-			gruposdto.setSemestre(grupo.getSemestre());
 			gruposdto.setTurno(grupo.getTurno());
 		}
 		
@@ -57,19 +51,7 @@ public class GruposDto {
 	public void setTurno(String turno) {
 		this.turno = turno;
 	}
-	public String getSalon() {
-		return salon;
-	}
-	public void setSalon(String salon) {
-		this.salon = salon;
-	}
-	public String getSemestre() {
-		return semestre;
-	}
-	public void setSemestre(String semestre) {
-		this.semestre = semestre;
-	}
-	
+
 
 	
 }

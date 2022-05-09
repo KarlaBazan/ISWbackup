@@ -13,11 +13,7 @@ public class MateriasDto {
 	private String idmateria;
 	@JsonProperty("nombre")
 	private String nombre;
-	@JsonProperty("semestre")
-	private String semestre;
-	@JsonProperty("salon")
-	private String salon;
-	
+
 	
 	
 	
@@ -26,8 +22,6 @@ public class MateriasDto {
 		if(materia!=null) {
 			materiasdto.setIdmateria(materia.getIdmateria());
 			materiasdto.setNombre(materia.getNombre());
-			materiasdto.setSemestre(materia.getSemestre());
-			materiasdto.setSalon(materia.getSalon());
 		}
 		
 		
@@ -58,18 +52,7 @@ public class MateriasDto {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getSemestre() {
-		return semestre;
-	}
-	public void setSemestre(String semestre) {
-		this.semestre = semestre;
-	}
-	public String getSalon() {
-		return salon;
-	}
-	public void setSalon(String salon) {
-		this.salon = salon;
-	}
+
 	
 	
 	
