@@ -15,6 +15,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorTailorModule } from '@ngneat/error-tailor';
 import { ReccontraComponent } from './reccontra/reccontra.component';
+import { FormdeportivosComponent } from './formdeportivos/formdeportivos.component';
+import { FormmedicosComponent } from './formmedicos/formmedicos.component';
+import { SolidictamenComponent } from './solidictamen/solidictamen.component';
+import { CitadeinscripcionComponent } from './citadeinscripcion/citadeinscripcion.component';
 
 
 @NgModule({
@@ -28,7 +32,11 @@ import { ReccontraComponent } from './reccontra/reccontra.component';
     HomepageComponent, 
     FormdireccionComponent, 
     FormgeneralesComponent,
-    ReccontraComponent
+    ReccontraComponent,
+    FormdeportivosComponent,
+    FormmedicosComponent,
+    SolidictamenComponent,
+    CitadeinscripcionComponent
   ],
   imports: [
     BrowserModule,
