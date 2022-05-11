@@ -7,7 +7,7 @@ public interface IMateriasService {
 	
 	List<Materias> findAll(); 
 	
-	Materias findMateriaById(String id);
+	Materias findMateriaById(String idmateria);
 	
 
 }
