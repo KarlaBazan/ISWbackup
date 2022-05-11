@@ -45,7 +45,5 @@ public class AlumnoController {
 		return new ResponseEntity<List<AlumnoDto>>(alumnosDto, HttpStatus.OK);
 		
 	}
-	
-	
 
 }

@@ -7,7 +7,7 @@ h2{
     text-align: center;
 }
 .form-register {
-    text-align: right;
+    text-align: center;
     width: 1000px;
     background: #ffffff;
     border: 6px solid rgb(107, 23, 64);
@@ -17,6 +17,7 @@ h2{
     font-family: 'Arial';
     color: rgb(0, 0, 0);
     box-shadow: 7px 13px 37px #000;
+    justify-content: center;
 }
 .form-register h2 {
     font-size: 22px;

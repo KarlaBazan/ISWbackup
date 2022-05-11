@@ -15,7 +15,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorTailorModule } from '@ngneat/error-tailor';
 import { ReccontraComponent } from './reccontra/reccontra.component';
-import { KardexComponent } from './kardex/kardex.component';
+import { FormdeportivosComponent } from './formdeportivos/formdeportivos.component';
+import { FormmedicosComponent } from './formmedicos/formmedicos.component';
+import { SolidictamenComponent } from './solidictamen/solidictamen.component';
+import { CitadeinscripcionComponent } from './citadeinscripcion/citadeinscripcion.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +33,10 @@ import { KardexComponent } from './kardex/kardex.component';
     FormdireccionComponent, 
     FormgeneralesComponent,
     ReccontraComponent,
-    KardexComponent
+    FormdeportivosComponent,
+    FormmedicosComponent,
+    SolidictamenComponent,
+    CitadeinscripcionComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,7 @@ import { KardexComponent } from './kardex/kardex.component';
           required:'Campo requerido',
           minlength:({requiredLength, actualLength})=> 
           'Se necesitan 10 caracteres',
-          invalidAddress: error =>'Direccion invalida'
+          email: error =>'Direccion invalida'
         }
       }
     })

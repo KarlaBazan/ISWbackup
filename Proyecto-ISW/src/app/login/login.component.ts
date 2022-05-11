@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { response } from 'express';
 import { RestService } from '../rest.service';
-
+import { JQueryStyleEventEmitter } from 'rxjs/internal/observable/fromEvent';
 @Component({
   selector: 'login',
   templateUrl: './login.component.html',
@@ -11,6 +11,7 @@ import { RestService } from '../rest.service';
 export class LoginComponent implements OnInit {
 
   public formlogin: FormGroup;
+  
   public user: any; 
   public error: any;
   constructor(private restService:RestService, private formBuilder: FormBuilder) { }
@@ -29,7 +30,13 @@ export class LoginComponent implements OnInit {
     .subscribe(respuesta =>{
       console.log(respuesta);
       if(respuesta != null){
+        
+        localStorage.setItem("user", JSON.stringify(respuesta))
         window.location.href= '/home';
+        
+      }
+      else{
+        alert("Error: Usuario no registrado en el sistema.");
       }
       });
     

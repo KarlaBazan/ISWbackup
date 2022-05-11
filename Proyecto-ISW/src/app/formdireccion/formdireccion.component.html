@@ -1,42 +1,46 @@
 <app-header></app-header>
 <app-navbar></app-navbar>
 <br>
-<div>
-<section class="form-register">
+<div >
+    
+  <form [formGroup]="formdireccion" (submit)="update()" errorTailor>
+<section class="form-register  ">
+
+    
     <h2>Direccion</h2>
     <p>
-        Correo: <input class="controls" type="email" name="correo" id="correo">
+        Correo: <input class="controls" formControlName="correo" type="correo" name="correo" id="correo">
     </p>
     <p>
-        Calle: <input class="controls" type="text" name="calle" id="calle">
+        Calle: <input class="controls" formControlName="calle" type="text" name="calle" id="calle">
     </p>
     <p>
-        Num Int: <input class="controls" type="text" name="numint" id="numint">
+        Num Int: <input class="controls" formControlName="numint" type="text" name="numint" id="numint">
     </p>
     <p>
-        Num Ext: <input class="controls" type="text" name="numext" id="numext">
+        Num Ext: <input class="controls" formControlName="numext" type="text" name="numext" id="numext">
     </p>
     <p>
-        Colonia: <input class="controls" type="text" name="colonia" id="colonia">
+        Colonia: <input class="controls" formControlName="alcaldia" type="text" name="alcaldia" id="alcaldia">
     </p>
     <p>
-        Cp: <input class="controls" type="text" name="cp" id="cp">
+        Cp: <input class="controls" minlength="5" maxlength="5" size="5" formControlName="cp" type="text" name="cp" id="cp">
     </p>
     <p>
-        Estado: <input class="controls" type="text" name="estado" id="estado">
+        Estado: <input class="controls" formControlName="estado" type="text" name="estado" id="estado">
+    </p>
+    
+    <p>
+        Telefono: <input class="controls" formControlName="telcasa" type="text" name="telcasa" id="telcasa">
     </p>
     <p>
-        Del/Mun: <input class="controls" type="text" name="DelMun" id="DelMun">
+        Movil: <input class="controls" formControlName="telmovil" type="text" name="telmovil" id="telmovil">
     </p>
-    <p>
-        Telefono: <input class="controls" type="text" name="telefono" id="telefono">
-    </p>
-    <p>
-        Movil: <input class="controls" type="text" name="movil" id="movil">
-    </p>
-    <p>
-        <input class="botons" type="submit" value="Modificar">
-    </p>
+    <div class="mb-3">
+        <button class="btn btn-primary" [disabled]="formdireccion.invalid" >Modificar Datos</button>
+    </div>
   </section>
+</form>
 </div>
+
 <app-footer></app-footer>

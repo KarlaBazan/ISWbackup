@@ -25,13 +25,13 @@ public class DireccionesDto {
 	private Integer cp; 
 	
 	@JsonProperty("telcasa")
-	private long telcasa; 
+	private String telcasa; 
 	
 	@JsonProperty("telmovil")
-	private long telmovil; 
+	private String telmovil; 
 	
 	@JsonProperty("teltrabajo")
-	private long teltrabajo; 
+	private String teltrabajo; 
 	
 	@JsonProperty("ext")
 	private Integer ext; 
@@ -122,27 +122,27 @@ public class DireccionesDto {
 		this.cp = cp;
 	}
 
-	public long getTelcasa() {
+	public String getTelcasa() {
 		return telcasa;
 	}
 
-	public void setTelcasa(long telcasa) {
+	public void setTelcasa(String telcasa) {
 		this.telcasa = telcasa;
 	}
 
-	public long getTelmovil() {
+	public String getTelmovil() {
 		return telmovil;
 	}
 
-	public void setTelmovil(long telmovil) {
+	public void setTelmovil(String telmovil) {
 		this.telmovil = telmovil;
 	}
 
-	public long getTeltrabajo() {
+	public String getTeltrabajo() {
 		return teltrabajo;
 	}
 
-	public void setTeltrabajo(long teltrabajo) {
+	public void setTeltrabajo(String teltrabajo) {
 		this.teltrabajo = teltrabajo;
 	}
 
