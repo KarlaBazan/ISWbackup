@@ -19,9 +19,9 @@ public class MateriasServiceImpl implements IMateriasService{
 	private MateriasRepository materiaRepository;
 
 	@Override
-	public Materias findMateriaById(String id) {
+	public Materias findMateriaById(String idmateria) {
 		// TODO Auto-generated method stub
-		return materiaRepository.findMateriaById(id);
+		return materiaRepository.findMateriaById(idmateria);
 	}
 
 	@Override
