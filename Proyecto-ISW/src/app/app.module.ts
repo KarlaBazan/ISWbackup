@@ -15,10 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorTailorModule } from '@ngneat/error-tailor';
 import { ReccontraComponent } from './reccontra/reccontra.component';
-import { FormdeportivosComponent } from './formdeportivos/formdeportivos.component';
-import { FormmedicosComponent } from './formmedicos/formmedicos.component';
-import { SolidictamenComponent } from './solidictamen/solidictamen.component';
-import { CitadeinscripcionComponent } from './citadeinscripcion/citadeinscripcion.component';
+import { HorarioComponent } from './horario/horario.component';
+import { CalificacionesComponent } from './calificaciones/calificaciones.component';
 
 
 @NgModule({
@@ -33,10 +31,8 @@ import { CitadeinscripcionComponent } from './citadeinscripcion/citadeinscripcio
     FormdireccionComponent, 
     FormgeneralesComponent,
     ReccontraComponent,
-    FormdeportivosComponent,
-    FormmedicosComponent,
-    SolidictamenComponent,
-    CitadeinscripcionComponent
+    HorarioComponent,
+    CalificacionesComponent
   ],
   imports: [
     BrowserModule,
