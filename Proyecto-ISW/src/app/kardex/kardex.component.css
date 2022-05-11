@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    text-align: left;
+}
+.tablas{
+    margin:auto;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(9, 0, 128);
+    font-family: 'Times New Roman', cursive;
+}
+.tablas th{
+    padding: 10px;
+}
+.kardex {
+    text-align: center;
+    width: 1000px;
+    background: #ffffff;
+    border: 6px solid rgb(107, 23, 64);
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    font-family: 'Arial';
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 13px 37px #000;
+}

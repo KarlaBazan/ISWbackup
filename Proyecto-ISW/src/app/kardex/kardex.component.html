@@ -1,0 +1,29 @@
+<br>
+<section class="kardex">
+    <h2>Calificaciones Globales</h2>
+    <br>
+    <p>Alumno: </p>
+    <p>Boleta: </p>
+    <p>Promedio: </p>
+    <br>
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Clave</th>
+            <th scope="col">Materia</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Forma de evaluacion</th>
+            <th scope="col">Calificacion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor ="let cal of calif">
+            <th scope="row">{{ cal.idmateria }}</th>
+            <td scope="row">{{ cal.nombre }} </td>
+          </tr>
+        </tbody>
+      </table>
+    
+    
+</section>
