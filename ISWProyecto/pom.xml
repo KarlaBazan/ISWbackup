@@ -58,6 +58,12 @@
 			<groupId>org.springframework.session</groupId>
 			<artifactId>spring-session-core</artifactId>
 		</dependency>
+		
+		<dependency>
+  <groupId>org.apache.httpcomponents</groupId>
+  <artifactId>httpclient</artifactId>
+  <scope>test</scope>
+</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -85,7 +91,12 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		
+		
+		
 	</dependencies>
+
 
 	<build>
 		<plugins>
@@ -169,6 +180,7 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+	
 
 	<profiles>
 		<profile>
