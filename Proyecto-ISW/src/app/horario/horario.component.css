@@ -1,0 +1,25 @@
+.container {
+    margin-top: 20px;
+}
+
+.row-master {
+    background-color: white;
+    border-radius: 10px;
+    border: 6px solid rgb(107, 23, 64);
+}
+
+.fila-1{
+    border-bottom: 6px solid rgb(107, 23, 64);
+}
+
+.table {
+    margin-bottom: 0px !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: rgb(107, 23, 64);
+}
+
+.col-table{
+    padding: 0px;
+}

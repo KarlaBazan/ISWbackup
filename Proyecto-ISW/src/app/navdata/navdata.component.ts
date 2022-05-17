@@ -25,6 +25,7 @@ export class NavdataComponent implements OnInit {
     "direcciones_iddireccion": 1,
     "datosmedicos_num_seg_social": 1234567,
     "password": null}`);
+    console.log('el user es: '+this.user.curp);
   }
 
 
